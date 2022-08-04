@@ -12,6 +12,7 @@ body{
 }
 .content-container {
     min-height: calc(100vh - 160px);
+    background-color: #FAFAFA;
 }
 .text-dark{
     text-decoration: none;
@@ -24,7 +25,7 @@ body{
     font-weight: 600;
 }
 .single-post{
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;    
 }
 
@@ -47,13 +48,26 @@ body{
     color: #505050;
 }
 .card-title{
-    line-height:1.2em;
-    min-height:2.6em;
     font-size: medium;
     font-family: Inter;
     font-weight: 600;
     color: black;
 }
+.card-big-title{
+    font-size: larger;
+    font-family: Inter;
+    font-weight: 700;
+    color: black;
+}
+#cardo{
+font-size: 0.93em;
+font-weight: 400;
+line-height: 1.4em;
+color: #505050;
+}
+
+
+
 .linkcard{
     text-decoration: none;
     
@@ -300,3 +314,16 @@ li:hover {
     border-radius: 0;
 }
 
+
+
+.testo {
+    font-size: x-large;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+.cat-title-name{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Inter';
+}
