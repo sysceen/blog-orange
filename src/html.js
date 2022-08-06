@@ -13,7 +13,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1765816011937850"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
 
         {props.headComponents}
 
