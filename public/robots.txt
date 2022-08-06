@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://heartfelt-profiterole-948609.netlify.app/sitemap/sitemap-index.xml
-Host: https://heartfelt-profiterole-948609.netlify.app
