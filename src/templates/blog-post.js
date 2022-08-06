@@ -1,8 +1,12 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 // import Image from "gatsby-image";
 import Layout from "../components/layout";
-import Seo from "../components/seo/seo"
+import Seo from "../components/seo/seo";
+import Twitterimg from "../images/twitter.png"
+import Facebookimg from "../images/facebook.png"
+import Linkedinimg from "../images/linkedin.png"
+import Pinterestimg from "../images/pinterest.png"
 
 
 
@@ -21,7 +25,7 @@ const BlogPostTemplate = ({ data }) => {
 
       <div className="single-post">
         <div className="container-fluid p-0 justify-content-between d-flex flex-row">
-          <div className="col-9 pe-2">
+          <div className="col-8 pe-2">
             <img
               src={post.IMAGE_URL}
               alt={post.H1.replace('?','')}
@@ -56,23 +60,44 @@ const BlogPostTemplate = ({ data }) => {
 
 
 
-          <div className="col-3 ps-4 pt-5">
-            <p>Share About Us</p>
-            <hr
-              style={{
-                backgroundColor: 'black',
-                color: 'black',
-                height: '2px',
-              }}
-            />  
-            <p>Recent Articles</p>
-            <hr
-              style={{
-                backgroundColor: '#000000',
-                color: '#000000',
-                height: '2px',
-              }}
-            />  
+          <div className="col-4 ps-4 pt-5">
+            <p id="sidebar-cat">Share About Us</p>
+            <hr/>  
+            <div className="my-4">
+              <img className="me-3" src={Twitterimg} width='40px' height='40px' />
+              <img className="me-3" src={Facebookimg} width='40px' height='40px' />
+              <img className="me-3" src={Linkedinimg} width='40px' height='40px' />
+              <img className="me-3" src={Pinterestimg} width='40px' height='40px' />
+            </div>
+            <p id="sidebar-cat">Recent Articles</p>
+
+            <hr className="mb-4"/>  
+
+            {data.restarticles.nodes.map((data, index) => {
+
+              return(
+                <>
+                
+                <Link to={`/${data.slug}/`} className='linkcard'>
+                      <div className="row pb-4" key={`content_item_${index}`}>
+                        <div className="col-5">
+                          <img src={data.IMAGE_URL} alt="Card image cap" style={{width:'140px',height:'140px'}}/>
+
+                        </div>
+                        <div className="col-7 m-auto">
+
+                            <h2 className="ps-1 related-title">{data.H1}</h2>                            
+                            
+                          
+                        </div>
+                      </div>
+                      </Link>
+
+
+                </>
+              )
+            })}
+
                 
           </div>
         </div>
@@ -106,5 +131,14 @@ export const query = graphql`
         }
       }
     }
+    restarticles: allBlogDataJson(limit: 5,filter: { slug: { ne: $slug } }) {
+      nodes {
+        slug
+        H1
+        IMAGE_URL
+      }
+    }
   }
+  
+  
 `;

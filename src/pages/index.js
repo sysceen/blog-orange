@@ -56,7 +56,6 @@ const IndexPage = () => {
 
 
 
-          // first block    
             <div className="row mt-2 mt-lg-5 me-0">
               <div className="col-8">
                 <div className="row">
@@ -68,14 +67,14 @@ const IndexPage = () => {
                     return (    
                       <>
                       <Link to={`/${data.node.slug}/`} className='linkcard'>
-                      <div className="row pb-5" key={`content_item_${index}`}>
+                      <div className="row pb-4" key={`content_item_${index}`}>
                         <div className="col-3">
                           <img class="" src={data.node.IMAGE_URL}  width="100%" height="100%" alt="Card image cap"/>
 
                         </div>
-                        <div className="col-8">
+                        <div className="col-9">
 
-                            <div className="card-body ps-1 sec-color py-2">
+                            <div className="card-body ps-1 sec-color py-2 pe-0">
                             <h2 className="card-big-title">{data.node.H1}</h2>
                             <p className="card-text" id="cardo">{excerpto.slice(0, excerpto.length - 1).join(' ')} ...</p>
                             
@@ -127,13 +126,32 @@ const IndexPage = () => {
           
 
 
-          //second block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div className="row mt-2 mt-lg-5 me-0">
             <div className="col-12">
-              <h2 className="cat-small-title mb-5">Category Name</h2>
+              <h2 className="cat-small-title mb-4 pb-2">Category Name</h2>
               <div className="row justify-content-between">
-
-
 
 
 
@@ -147,10 +165,10 @@ const IndexPage = () => {
                             <Link to={`/${data.node.slug}/`} className='linkcard'>
                               <div className="row pb-4" key={`content_item_${index}`}>
                                 <div className="col-4">
-                                  <img class="" src={data.node.IMAGE_URL} width="100%" height="100%" alt="Card image cap"/>
+                                  <img class="" src={data.node.IMAGE_URL} width="143px" height="94px" alt="Card image cap"/>
 
                                 </div>
-                                <div className="col-8 px-0">
+                                <div className="col-8 px-0 m-auto">
 
                                     <div className="card-body py-0 sec-color">
                                     <h2 className="card-title">{data.node.H1}</h2>
@@ -167,20 +185,32 @@ const IndexPage = () => {
                         );
                       })}
 
-
-
-
-
-
-                   
-
               </div>
             </div>
           </div>
 
 
 
-          //third block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

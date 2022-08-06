@@ -12,6 +12,9 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9808253958086114"
+     crossOrigin="anonymous"></script>
+
         {props.headComponents}
 
       </head>
@@ -23,6 +26,8 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+
+
       </body>
     </html>
   )

@@ -327,3 +327,31 @@ li:hover {
     font-weight: 600;
     font-family: 'Inter';
 }
+.related-title{
+    font-size: large;
+    font-family: Inter;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+#sidebar-cat{
+    font-weight: 400;
+    font-size: x-large;
+    color: black;
+}
+
+hr{
+    color: black !important;
+    border-color: #000 !important;
+    height: 2px !important;
+    background-color:#000 !important;
+}
+
+.card-text{
+    font-weight: 400;
+}
+
+.cat-small-title{
+    font-weight: 700;
+    font-size: x-large;
+}
