@@ -227,12 +227,12 @@ const IndexPage = () => {
               <div className="col-4">
                 <div className="row">
 
-<ins class="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-9808253958086114"
-     data-ad-slot="5972256991"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+                <ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1765816011937850"
+     data-ad-slot="8106248122"></ins>
 
 
                 {data.allBlogDataJson.edges.slice(0,3).map((data, index) => {
